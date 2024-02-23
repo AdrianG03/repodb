@@ -41,11 +41,11 @@ CREATE TABLE `biblioteca` (
 --
 
 INSERT INTO `biblioteca` (`idJuego`, `idUsuario`, `fechaAd`, `horas`, `clasificacion`, `estado`) VALUES
-('101', '1', '2023-01-01', 10.5, 'E10+', 'Activo'),
-('102', '2', '2022-05-15', 20.2, 'M', 'Activo'),
-('103', '3', '2023-11-30', 15.75, 'T', 'Inactivo'),
-('104', '4', '2021-03-20', 5.3, 'E', 'Activo'),
-('105', '5', '2024-02-10', 30.1, 'E10+', 'Activo');
+('101', '1', '2023-01-01', 10, 'E', 'Activo'),
+('102', '2', '2022-05-15', 70, 'M', 'Activo'),
+('103', '3', '2023-11-30', 56, 'T', 'Inactivo'),
+('104', '4', '2021-03-20', 120, 'E+10', 'Activo'),
+('105', '5', '2024-02-10', 34, 'E', 'Activo');
 
 -- --------------------------------------------------------
 
@@ -66,11 +66,11 @@ CREATE TABLE `inventario` (
 --
 
 INSERT INTO `inventario` (`idObjeto`, `idUsuario`, `nombreO`, `tipo`, `estado`) VALUES
-('201', '1', 'Objeto1', 'Consumible', 'Nuevo'),
-('202', '2', 'Objeto2', 'Equipamiento', 'Usado'),
-('203', '3', 'Objeto3', 'Arma', 'Nuevo'),
-('204', '4', 'Objeto4', 'Consumible', 'Usado'),
-('205', '5', 'Objeto5', 'Armadura', 'Nuevo');
+('201', '1', 'Poción magica', 'Consumible', 'Nuevo'),
+('202', '2', 'Escudo desgastado', 'Equipamiento', 'Usado'),
+('203', '3', 'Espada colmillo', 'Arma', 'Nuevo'),
+('204', '4', 'Poción de sanación', 'Consumible', 'Usado'),
+('205', '5', 'Casco', 'Armadura', 'Nuevo');
 
 -- --------------------------------------------------------
 
@@ -93,11 +93,11 @@ CREATE TABLE `juego` (
 --
 
 INSERT INTO `juego` (`idJuego`, `nombreJ`, `precio`, `class`, `dev`, `anio`, `editor`) VALUES
-('101', 'Juego1', 20, 'Aventura', 'Desarrollador1', '2020', 'Editor1'),
-('102', 'Juego2', 30, 'Acción', 'Desarrollador2', '2019', 'Editor2'),
-('103', 'Juego3', 25, 'Estrategia', 'Desarrollador3', '2021', 'Editor3'),
-('104', 'Juego4', 15, 'Simulación', 'Desarrollador4', '2018', 'Editor4'),
-('105', 'Juego5', 40, 'RPG', 'Desarrollador5', '2017', 'Editor5');
+('101', 'Skyrim', 20, 'Aventura', 'Bethesda', '2020', 'Bethesda Softworks'),
+('102', 'GTA V', 30, 'Acción', 'Rockstar Games', '2019', 'Rockstar North'),
+('103', 'Fortnite', 25, 'Estrategia', 'Epic Games', '2021', 'Epic'),
+('104', 'Realm Royale', 15, 'Simulación', 'Guevaru Games', '2018', 'JuanSal Games'),
+('105', 'The Witcher 3', 40, 'RPG', 'CD Projekt', '2017', 'Warner B');
 
 -- --------------------------------------------------------
 
@@ -119,11 +119,11 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idUsuario`, `nickname`, `edad`, `region`, `telefono`, `correo`) VALUES
-('1', 'usuario1', 25, 'América', '1234567890', 'usuario1@example.com'),
-('2', 'usuario2', 30, 'Europa', '0987654321', 'usuario2@example.com'),
-('3', 'usuario3', 22, 'Asia', '1357924680', 'usuario3@example.com'),
-('4', 'usuario4', 28, 'África', '2468013579', 'usuario4@example.com'),
-('5', 'usuario5', 35, 'Oceanía', '9876543210', 'usuario5@example.com');
+('1', 'inexx', 25, 'América', '7350986543', 'inexx777@gmail.com'),
+('2', 'tizoc', 30, 'Europa', '7351238905', 'tizsalas@gmail.com'),
+('3', 'Beban', 22, 'Asia', '7359830476', 'bebardo@gmail.com'),
+('4', 'E12', 28, 'África', '7356783546', 'papitas32@gmail.com'),
+('5', 'CalvoYT', 23, 'Oceanía', '7351241139', 'vegetta777@gmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -176,3 +176,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
