@@ -4,11 +4,11 @@ export default class Connection {
   dbClient;
 
   config = {
-    host: "maria",
+    host: "localhost",
     user: "root",
     password: "therootpass",
     database: "epicgames",
-    port: "3310",
+    port: 3310,
   };
 
   constructor() {
@@ -40,10 +40,11 @@ export default class Connection {
 /* import { createPool } from "mysql2/promise";
 
 const pool = createPool({
-  host: "maria", // Nombre del servicio en el docker-compose.yml
-  user: "willy", // Usuario definido en el docker-compose.yml
-  password: "fortinaito", // Contraseña definida en el docker-compose.yml
-  database: "epicgames", // Nombre de la base de datos que quieres usar
+  host: "localhost", 
+  user: "root", 
+  password: "therootpass", 
+  database: "epicgames", 
+  port: 3310,
 });
 
 export default pool; */

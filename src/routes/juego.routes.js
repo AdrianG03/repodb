@@ -9,9 +9,9 @@ connection.createConnection();
 router.get("/list", async (req, res) => {
   try {
     const db = connection.getClient();
-    console.log("DB:", db); // Verifica si db está definido
+    console.log("DB:", db); 
     const [result] = await db.query("SELECT * FROM juego");
-    console.log("Result:", result); // Verifica el resultado de la consulta
+    console.log("Result:", result);
     res.render("juego/list", { juego: result });
   } catch (err) {
     res.status(500).json({ message: err.message });
